@@ -21,12 +21,11 @@ body {
 
 
 /* ----------------- Classes --------------------------- */
+.container {
+  position: relative;
+}
 
 /* ------------------------- Timeline -------------------------- */
-/* .timeline {
-  position: relative;
-  height: inherit;
-} */
 
 .vertical_line {
   border-left: 5px solid #005E90;
@@ -41,7 +40,6 @@ body {
 .cards {
   display: block;
   position: relative;
-  padding-bottom: 40px;
 }
 
 .card_1 {
@@ -49,11 +47,11 @@ body {
   width:auto;
   position: relative;
   left: 100px;
-  top: 25px;
   max-width: 70%;
   background-color: #F5F5F5;
   border-radius: 7px;
   margin-bottom: 10%;
+  margin-top: 10%;
 }
 .card_1>ul>.datestamp {
   position: absolute;
@@ -65,6 +63,7 @@ body {
   display: inline-block;
   width: auto;
   position: relative;
+  left: 100px;
   max-width: 70%;
   background-color: #F5F5F5;
   border-radius: 7px;
@@ -80,6 +79,7 @@ body {
   display: inline-block;
   width: auto;
   position: relative;
+  left: 100px;
   max-width: 70%;
   background-color: #F5F5F5;
   border-radius: 7px;
@@ -104,7 +104,7 @@ body {
   height:auto;
   text-align: center;
   color: white;
-  padding: 8px;
+  padding: 10px 20px;
   border-radius: 3px;
   margin: 20px;
 }
@@ -116,3 +116,20 @@ body {
 /* .card-image {
 
 } */
+
+
+
+/* ------------------ Full Size --------------------------- */
+
+@media(min-width: 768px) {
+  .card_2 {
+  background-color: red;
+}
+.vertical_line {
+  border-left: 5px solid #005E90;
+  height: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+}
