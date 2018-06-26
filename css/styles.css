@@ -1,0 +1,114 @@
+/* ---------------- Main Defs ------------------------------ */
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+list-style: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #A9A9A9;
+}
+
+
+/* ----------------- Classes --------------------------- */
+
+/* ------------------------- Timeline -------------------------- */
+/* .timeline {
+  position: relative;
+  height: inherit;
+} */
+
+.vertical_line {
+  border-left: 5px solid #005E90;
+  height: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+}
+
+/* ------------------------ Cards ---------------------------- */
+.cards {
+  display: block;
+  position: relative;
+}
+
+.card_1 {
+  display: inline-block;
+  width:auto;
+  position: absolute;
+  left: 100px;
+  top: 25px;
+  max-width: 70%;
+  background-color: #F5F5F5;
+  border-radius: 7px;
+}
+.card_1>ul>.datestamp {
+  position: absolute;
+  top:0%;
+  right:0%
+}
+
+.card_2 {
+  display: inline-block;
+  width: auto;
+  position: absolute;
+  left: 100px;
+  top: 400px;
+  max-width: 70%;
+  background-color: #F5F5F5;
+  border-radius: 7px;
+}
+.card_2>ul>.datestamp{
+  position: absolute;
+  top:0%;
+  left:0%;
+}
+
+.card_3 {
+  display: inline-block;
+  width: auto;
+  position: absolute;
+  left: 100px;
+  top: 1500px;
+  max-width: 70%;
+  background-color: #F5F5F5;
+  border-radius: 7px;
+}
+.card_3>ul>.datestamp{
+  position: absolute;
+  top:0%;
+  right:0%;
+}
+
+.datestamp {
+  background-color: #FF0043;
+  display: inline-block;
+  padding: 12px;
+  color: white;
+}
+
+.morebutton {
+  background-color: #00618E;
+  display: inline-block;
+  height:auto;
+  text-align: center;
+  color: white;
+  padding: 8px;
+  border-radius: 3px;
+  margin: 20px;
+}
+
+.text_content {
+  padding: 20px;
+}
