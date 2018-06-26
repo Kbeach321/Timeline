@@ -41,17 +41,19 @@ body {
 .cards {
   display: block;
   position: relative;
+  padding-bottom: 40px;
 }
 
 .card_1 {
   display: inline-block;
   width:auto;
-  position: absolute;
+  position: relative;
   left: 100px;
   top: 25px;
   max-width: 70%;
   background-color: #F5F5F5;
   border-radius: 7px;
+  margin-bottom: 10%;
 }
 .card_1>ul>.datestamp {
   position: absolute;
@@ -62,12 +64,11 @@ body {
 .card_2 {
   display: inline-block;
   width: auto;
-  position: absolute;
-  left: 100px;
-  top: 400px;
+  position: relative;
   max-width: 70%;
   background-color: #F5F5F5;
   border-radius: 7px;
+  margin-bottom: 10%;
 }
 .card_2>ul>.datestamp{
   position: absolute;
@@ -78,12 +79,11 @@ body {
 .card_3 {
   display: inline-block;
   width: auto;
-  position: absolute;
-  left: 100px;
-  top: 1500px;
+  position: relative;
   max-width: 70%;
   background-color: #F5F5F5;
   border-radius: 7px;
+  margin-bottom: 10%;
 }
 .card_3>ul>.datestamp{
   position: absolute;
@@ -112,3 +112,7 @@ body {
 .text_content {
   padding: 20px;
 }
+
+/* .card-image {
+
+} */
