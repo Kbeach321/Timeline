@@ -17,19 +17,19 @@ list-style: none;
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #A9A9A9;
+  overflow-x: hidden;
 }
 
 
 /* ----------------- Classes --------------------------- */
 .container {
-  position: relative;
+  position: relative; /* Relative so Vertical Line may be absolute */
 }
-
 /* ------------------------- Timeline -------------------------- */
 
 .vertical_line {
   border-left: 5px solid #005E90;
-  height: 90%;
+  height: 100%;
   position: absolute;
   top: 50%;
   left: 50px;
@@ -37,54 +37,32 @@ body {
 }
 
 /* ------------------------ Cards ---------------------------- */
-.cards {
-  display: block;
-  position: relative;
-}
 
-.card_1 {
-  display: inline-block;
-  width:auto;
-  position: relative;
+.card {
+  width: 400px;
+  position: relative; /* made position relative so I could absolute postion the datestamp */
   left: 100px;
-  max-width: 70%;
   background-color: #F5F5F5;
   border-radius: 7px;
   margin-bottom: 10%;
+}
+
+.card_1 {
   margin-top: 10%;
 }
+
 .card_1>ul>.datestamp {
   position: absolute;
   top:0%;
   right:0%
 }
 
-.card_2 {
-  display: inline-block;
-  width: auto;
-  position: relative;
-  left: 100px;
-  max-width: 70%;
-  background-color: #F5F5F5;
-  border-radius: 7px;
-  margin-bottom: 10%;
-}
 .card_2>ul>.datestamp{
   position: absolute;
   top:0%;
   left:0%;
 }
 
-.card_3 {
-  display: inline-block;
-  width: auto;
-  position: relative;
-  left: 100px;
-  max-width: 70%;
-  background-color: #F5F5F5;
-  border-radius: 7px;
-  margin-bottom: 10%;
-}
 .card_3>ul>.datestamp{
   position: absolute;
   top:0%;
@@ -113,23 +91,45 @@ body {
   padding: 20px;
 }
 
-/* .card-image {
+.card-image {
+  position: relative; /* made position relative so I could absolute postion the h2 */
+}
+.card-image>h2 {
+  position: absolute;
+  bottom: 20px;
+  left: 15px;
+  color: white;
+}
 
-} */
+.octicon-plus-small {
+  position: relative;
+  right: 55px;
+  background-color: #00618E;
+  border-radius: 30px;
+  color: #fff;
 
-
+}
 
 /* ------------------ Full Size --------------------------- */
 
 @media(min-width: 768px) {
-  .card_2 {
-  background-color: red;
+
+.container {
+  transform: translateX(50%);
+  margin-left: -2.5px;
 }
-.vertical_line {
-  border-left: 5px solid #005E90;
-  height: 90%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%);
+
+.card {
+  max-width: 300px;
+  display: block;
+}
+
+ .card_2 {
+  max-width: 300px;
+  transform: translateX(-125%);
+  display: block;
+}
+
+.card_2 .octicon-plus-small {
+  left: 320px;
 }
